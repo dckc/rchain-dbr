@@ -29,8 +29,8 @@ try_files $uri $uri/ /index.php?q=$uri&$args;
     fastcgi_param HTTPS $my_https; # set $_SERVER['HTTPS']
     fastcgi_param SERVER_NAME $host; # set $_SERVER['SERVER_NAME']
     fastcgi_param HTTP_HOST $host; # set $_SERVER['HTTP_HOST']
-    #fastcgi_pass unix:/run/php/php7.0-fpm.sock;
-    fastcgi_pass unix:/var/run/php/php7.0-fpm.sock;
+    #fastcgi_pass unix:/run/php/php7.2-fpm.sock;
+    fastcgi_pass unix:/var/run/php/php7.2-fpm.sock;
   }
 
   location /aux {
